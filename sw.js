@@ -26,15 +26,13 @@ self.addEventListener('fetch', function(event) {
   console.log("fetched ", event.request.url);
  });
 
-// self.addEventListener('fetch', function(e) {
-//   e.respondWith(
-//     caches.match(e.request).then(function(response) {
-//       return response || fetch(e.request);
-//     })
-//   );
-// });
-
-/* Serve cached content when offline */
+self.addEventListener('fetch', function(e) {
+  e.respondWith(
+    caches.match(e.request).then(function(response) {
+      return response || fetch(e.request);
+    })
+  );
+});
 
 /*
 
