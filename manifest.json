@@ -1,0 +1,9 @@
+{
+  "name": "Hello World",
+  "short_name": "Basic",
+  "lang": "en-UK",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "blue",
+  "theme_color": "blue"
+}
