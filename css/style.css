@@ -38,7 +38,11 @@ body {
   text-align: center;
 }
 
-#tab-headings{
+li{
+  list-style-type:none;
+}
+
+ul#tab-headings li{
   display:inline;
 }
 
